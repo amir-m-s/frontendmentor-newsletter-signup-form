@@ -54,9 +54,11 @@ ul {
 }
 
 .attribution {
-    position: absolute;
+    position: fixed;
     bottom: 0;
+    left: 0;
     color: var(--clr-neutral-800);
+    background-color: var(--clr-neutral-200);
 }
 
 .attribution a {
@@ -87,7 +89,14 @@ ul {
     font-size: var(--fs-paragraph);
 }
 
+.mobile-img {
+    display: none;
+}
+
 .img-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: right;
     padding-right: 0.7rem;
     padding-block: 0.5rem;
@@ -137,4 +146,55 @@ label {
 
 .subscribe-btn:hover {
     background: linear-gradient(90deg, rgba(249,49,28,1) 0%, rgba(236,61,50,1) 33%, rgba(255,98,87,1) 100%);
+}
+
+@media (max-width: 810px) {
+    .card {
+        width: 100%;
+        height: 100vh;
+        border-radius: 0;
+    }
+
+    .text-content h1 {
+        font-size: calc(2.5rem - 1vw);
+    }
+}
+
+@media (max-width: 375px) {
+    body {
+        display: block;
+        height: auto;
+    }
+
+    .mobile-img {
+        display: block;
+    }
+
+    .desktop-img {
+        display: none;
+    }
+
+    .card {
+        padding: 0;
+        height: auto;
+        grid-template-columns: 1fr;
+    }
+
+    .card .text-content {
+        padding: 0.5rem 1.2rem;
+        order: 2;
+    }
+
+    .card .img-content {
+        padding: 0;
+        order: 1;
+    }
+
+    .img-content img {
+        width: 100%;
+    }
+
+    .attribution {
+        position: static;
+    }
 }
