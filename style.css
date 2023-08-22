@@ -2,18 +2,17 @@
     font-family: "Roboto";
     src: url("./assets/fonts/Roboto-Regular.ttf");
     font-weight: var(--fw-regular);
-    font-style: normal;
 }
 @font-face {
     font-family: "Roboto";
     src: url("./assets/fonts/Roboto-Bold.ttf");
     font-weight: var(--fw-bold);
-    font-style: normal;
 }
 * {
     margin: 0;
     padding: 0;
     border: none;
+    outline: none;
     font-family: var(--ff), sans-serif;
     box-sizing: border-box;
 }
@@ -36,6 +35,106 @@
 }
 
 
-p {
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: var(--clr-neutral-200);
+}
+
+ul {
+    margin-block: 1rem;
+    list-style-image: url(./assets/images/icon-list.svg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    list-style-position: inside;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 0;
+    color: var(--clr-neutral-800);
+}
+
+.attribution a {
+    color: var(--clr-primary);
+}
+
+.message {
+    display: none;
+}
+
+.card {
+    display: grid;
+    width: 50rem;
+    background-color: var(--clr-neutral-800);
+    border-radius: 1rem;
+    padding: 0.5rem;
+    grid-template-columns: 1.2fr 1fr;
+}
+
+.card h1 {
+    font-size: 2.5rem;
+    padding-block: 1rem;
+    color: var(--clr-neutral-200);
+}
+
+.card p, ul {
+    color: var(--clr-neutral-400);
     font-size: var(--fs-paragraph);
+}
+
+.img-content {
+    text-align: right;
+    padding-right: 0.7rem;
+    padding-block: 0.5rem;
+}
+
+.img-content img {
+    width: 90%;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 4.5rem;
+    font-weight: 400;
+}
+
+label {
+    font-size: 0.8rem;
+    display: block;
+    color: var(--clr-neutral-200);
+}
+
+
+.email-input {
+    width: 100%;
+    border: 1px solid var(--clr-neutral-600);
+    border-radius: 0.3rem;
+    padding: 0.7rem 1rem;
+    margin-top: 0.5rem;
+    transition: 0.2s ease-in-out;
+}
+
+.email-input:focus {
+    border: 1px solid var(--clr-neutral-200);
+}
+
+.subscribe-btn {
+    width: 100%;
+    background-color: var(--clr-neutral-200);
+    color: var(--clr-neutral-800);
+    cursor: pointer;
+    border-radius: 0.3rem;
+    padding: 1rem 0;
+    margin-top: 1rem;
+}
+
+.subscribe-btn:hover {
+    background: linear-gradient(90deg, rgba(249,49,28,1) 0%, rgba(236,61,50,1) 33%, rgba(255,98,87,1) 100%);
 }
