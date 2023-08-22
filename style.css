@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: sans-serif;
+}
+
+:root {
+    /* Primary Color */
+    --clr-primary: hsl(4, 100%, 67%);
+
+    /* Neutral Colors */
+    --clr-neutral-800: hsl(0, 0%, 100%);
+    --clr-neutral-600: hsl(231, 7%, 60%);
+    --clr-neutral-400: hsl(235, 18%, 26%);
+    --clr-neutral-200: hsl(234, 29%, 20%);
+
+    /* Font style */
+    --fs-paragraph: 16px;
+    --ff: "Roboto";
+    --fw-regular: 400;
+    --fw-bold: 700;
+}
+
