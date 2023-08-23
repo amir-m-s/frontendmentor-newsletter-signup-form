@@ -27,10 +27,12 @@
       </ul>
     
       
-    
-      <label for="email">Email address</label>
-      <input type="email" placeholder="email@company.com" class="email-input">
-      <button type="button" class="btn">Subscribe to monthly newsletter</button>
+      <div class="email_label">
+        <label for="email">Email address</label>
+        <div class="err-msg">Valid email required</div>
+      </div>
+      <input type="email" id="email"  placeholder="email@company.com" class="email-input">
+      <button type="button" class="btn" id="subscribe-btn">Subscribe to monthly newsletter</button>
       
       <!-- Sign-up form end -->
     
@@ -42,12 +44,14 @@
     </section>
     <!-- Success message start -->
     <section class="message">
-      Thanks for subscribing!
-        
-      A confirmation email has been sent to ash@loremcompany.com. 
-      Please open it and click the button inside to confirm your subscription.
+      <img src="./assets/images/icon-success.svg" alt="">
+      <h2>Thanks for subscribing!</h2>
+      <p>
+        A confirmation email has been sent to <strong class="user-email">ash@loremcompany.com</strong>. 
+        Please open it and click the button inside to confirm your subscription.
+      </p>
       
-      Dismiss message      
+      <button type="button" class="btn dismiss-btn">Dismiss message</button>
       <!-- Success message end -->
     </section>  
   </main>
