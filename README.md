@@ -37,8 +37,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/newsletter-signup-form-with-success-message-ImcAuo-VGS)
-- Live Site URL: [Add live site URL here](https://frontendmentor-newsletter-signup-form.vercel.app/)
+- Solution URL: [solution URL](https://www.frontendmentor.io/solutions/newsletter-signup-form-with-success-message-ImcAuo-VGS)
+- Live Site URL: [site URL](https://frontendmentor-newsletter-signup-form.vercel.app/)
 
 ## My process
 
