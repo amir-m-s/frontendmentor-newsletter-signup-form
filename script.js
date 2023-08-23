@@ -40,8 +40,15 @@ function subscribe() {
         text.style = "display: none;";
         img.style = "display: none;";
         message.style = "display: block";
+        
         document.querySelector(".user-email").innerText = email_input.value;
-        document.querySelector(".card").style = "width: 25rem; padding: 3rem 4rem";
+        
+        
+        if (window.innerWidth <= 550) {
+            document.querySelector(".card").style = "width: 100%; height: 100vh;padding: 1.5rem";
+        } else {
+            document.querySelector(".card").style = "width: 25rem; padding: 3rem 4rem";
+        }
     }
 }
 
